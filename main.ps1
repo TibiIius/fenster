@@ -16,6 +16,8 @@ function main {
     "RODE.Rode-Central"
     "Nextcloud.NextcloudDesktop"
     "Docker.DockerDesktop"
+    "Logitech.GHUB"
+    "Logitech.LogiTune"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
