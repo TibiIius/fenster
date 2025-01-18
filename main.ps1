@@ -1,5 +1,5 @@
 function main {
-  toolsToInstall=(
+  $toolsToInstall = @(
     "Python.Python.3.13"
     "Microsoft.VisualStudioCode"
     "Microsoft.WindowsTerminal"
@@ -16,5 +16,8 @@ function main {
   forearch ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity -e --id=$tool
   }
+
   wsl --install -d Ubuntu
 }
+
+main
