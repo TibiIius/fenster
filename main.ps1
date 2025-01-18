@@ -15,9 +15,10 @@ function main {
     "Spotify.Spotify"
     "RODE.Rode-Central"
     "Nextcloud.NextcloudDesktop"
+    "Docker.DockerDesktop"
   )
   foreach ($tool in $toolsToInstall) {
-    winget install --force --disable-interactivity -e --id=$tool
+    winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
   }
 
   wsl --install -d Ubuntu
