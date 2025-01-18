@@ -18,6 +18,10 @@ function main {
     "Docker.DockerDesktop"
     "Logitech.GHUB"
     "Logitech.LogiTune"
+    "Obsidian.Obsidian"
+    "Mozilla.Thunderbird"
+    "7zip.7zip"
+    "Google.Chrome"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
