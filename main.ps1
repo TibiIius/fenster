@@ -12,6 +12,9 @@ function main {
     "Blizzard.Battlenet"
     "KDE.Krita"
     "OBSProject.OBSStudio"
+    "Spotify.Spotify"
+    "RODE.Rode-Central"
+    "Nextcloud.NextcloudDesktop"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity -e --id=$tool
