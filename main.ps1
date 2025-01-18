@@ -13,7 +13,7 @@ function main {
     "KDE.Krita"
     "OBSProject.OBSStudio"
   )
-  forearch ($tool in $toolsToInstall) {
+  foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity -e --id=$tool
   }
 
