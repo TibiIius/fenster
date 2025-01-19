@@ -26,6 +26,8 @@ function main {
     "cinnyapp.cinny-desktop"
     "Git.Git"
     "JetBrains.Toolbox"
+    "Google.Chrome"
+    "Neovim.Neovim"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
