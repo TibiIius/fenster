@@ -3,6 +3,7 @@ function main {
     "Python.Python.3.13"
     "Microsoft.VisualStudioCode"
     "Microsoft.WindowsTerminal"
+    "Microsoft.PowerToys"
     "Zen-Team.Zen-Browser"
     "Discord.Discord"
     "Valve.Steam"
@@ -23,6 +24,7 @@ function main {
     "7zip.7zip"
     "Google.Chrome"
     "cinnyapp.cinny-desktop"
+    "Git.Git"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
