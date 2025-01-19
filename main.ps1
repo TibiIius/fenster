@@ -28,6 +28,7 @@ function main {
     "JetBrains.Toolbox"
     "Google.Chrome"
     "Neovim.Neovim"
+    "GnuPG.GnuPG"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
