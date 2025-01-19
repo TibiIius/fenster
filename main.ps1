@@ -29,6 +29,7 @@ function main {
     "Google.Chrome"
     "Neovim.Neovim"
     "GnuPG.GnuPG"
+    "DebaucheeOpenSourceGroup.Barrier"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
