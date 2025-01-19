@@ -22,6 +22,7 @@ function main {
     "Mozilla.Thunderbird"
     "7zip.7zip"
     "Google.Chrome"
+    "cinnyapp.cinny-desktop"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
