@@ -30,6 +30,8 @@ function main {
     "Neovim.Neovim"
     "GnuPG.GnuPG"
     "DebaucheeOpenSourceGroup.Barrier"
+    "beekeeper-studio.beekeeper-studio"
+    "RedHat.VirtViewer"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
