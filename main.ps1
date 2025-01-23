@@ -32,6 +32,7 @@ function main {
     "DebaucheeOpenSourceGroup.Barrier"
     "beekeeper-studio.beekeeper-studio"
     "RedHat.VirtViewer"
+    "Nickvision.Parabolic"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
