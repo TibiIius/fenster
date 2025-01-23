@@ -33,6 +33,7 @@ function main {
     "beekeeper-studio.beekeeper-studio"
     "RedHat.VirtViewer"
     "Nickvision.Parabolic"
+    "NexusMods.Vortex"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
