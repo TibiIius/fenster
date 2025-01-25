@@ -26,7 +26,6 @@ function main {
     "cinnyapp.cinny-desktop"
     "Git.Git"
     "JetBrains.Toolbox"
-    "Google.Chrome"
     "Neovim.Neovim"
     "GnuPG.GnuPG"
     "DebaucheeOpenSourceGroup.Barrier"
@@ -34,6 +33,7 @@ function main {
     "RedHat.VirtViewer"
     "Nickvision.Parabolic"
     "NexusMods.Vortex"
+    "PrismLauncher.PrismLauncher"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
