@@ -34,6 +34,8 @@ function main {
     "Nickvision.Parabolic"
     "NexusMods.Vortex"
     "PrismLauncher.PrismLauncher"
+    "VideoLAN.VLC"
+    "LizardByte.Sunshine"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
