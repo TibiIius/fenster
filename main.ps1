@@ -36,9 +36,10 @@ function main {
     "PrismLauncher.PrismLauncher"
     "VideoLAN.VLC"
     "LizardByte.Sunshine"
+    "Unity.UnityHub"
   )
   foreach ($tool in $toolsToInstall) {
-    winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
+    winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool --location "C:\Daten\Programme\$tool"
   }
 
   wsl --install -d Ubuntu
