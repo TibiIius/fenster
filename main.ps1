@@ -37,6 +37,7 @@ function main {
     "VideoLAN.VLC"
     "LizardByte.Sunshine"
     "Unity.UnityHub"
+    "Eugeny.Tabby"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool --location "C:\Daten\Programme\$tool"
