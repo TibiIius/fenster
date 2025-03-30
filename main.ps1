@@ -38,6 +38,10 @@ function main {
     "LizardByte.Sunshine"
     "Unity.UnityHub"
     "Nushell.Nushell"
+    "SevenTV.Chatterino7"
+    "GoodGameMods.Minion"
+    "HandBrake.HandBrake"
+    "wez.wezterm"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool --location "C:\Daten\Programme\$tool"
