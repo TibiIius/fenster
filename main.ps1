@@ -27,6 +27,7 @@ function main {
     "OpenRGB.OpenRGB"
     "Bitwarden.Bitwarden"
     "goatcorp.XIVLauncher"
+    "Rainmeter.Rainmeter"
   )
   foreach ($tool in $toolsToInstall) {
     winget install --force --disable-interactivity --accept-package-agreements -e --id=$tool
